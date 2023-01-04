@@ -1,0 +1,113 @@
+/*1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros*/
+:root {
+    --just-white: #ffffff;
+    --black: #050709;
+    --gray: #897f95;
+    --light-blue: #0076e4;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)), url('./2159510.webp');
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.4rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+    border: 2px solid var(--gray);
+    border-radius: 20px;
+    background-color: #ffffff
+}
+main .main__form--container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.main__form--container .main__form--login {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 300px;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-bottom: 2px solid #6e6e6e5e;
+}
+.main__form--container label {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+label span {
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+label input {
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid var(--light-blue);
+    font-size: 1.4rem;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.4rem;
+}
+form .forgot-password {
+    margin: 10px 0 10px 10px;
+    color: var(--light-blue);
+}
+.main__form--container button {
+    width: 300px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid var(--light-blue);
+    background-color: var(--just-white);
+    font-size: 1.8rem;
+    color: var(--light-blue);
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    color: var(--just-white);
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+.main__form--container p{
+    font-size: 1.4rem;
+    margin: 10px 0;
+    margin-left: 10px;
+    color: var(--gray);
+}
+.main__form--container .register {
+    color: var(--light-blue);
+    transition: 0.5s;
+}
+a:hover {
+    color: #004585;
+}
